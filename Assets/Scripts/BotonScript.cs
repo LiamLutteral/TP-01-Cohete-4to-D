@@ -5,6 +5,7 @@ using UnityEngine;
 public class BotonScript : MonoBehaviour
 {
     public GameObject botonGO;
+    public CoheteScrpt CoheteScrpt;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +22,12 @@ public class BotonScript : MonoBehaviour
     void OnMouseDown()
     {
         botonGO.SetActive(false);
+        CoheteScrpt.despegue();
     }
 
     void OnMouseUp()
     {
         botonGO.SetActive(true);
+
     }
 }
